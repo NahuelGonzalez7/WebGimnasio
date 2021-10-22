@@ -1,0 +1,95 @@
+/*
+        CAPITALIZE - Transforma la primer letra de cada palabra en mayuscula.
+        LOWERCASE - Transforma todas las letras del elemento en minisculas.
+        NONE - Valor predeterminado - Simplemente toma lo que escribi en el HTML.
+        UPPERCASE - Transforma a todas en mayusculas.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+@font-face {   
+        src: url(../Fuentes/BodoniFLF-BoldItalic.ttf);
+        font-style: italic;
+        font-weight: bold;
+        font-family: miFuente;}
+
+h1,h2{margin: 0;}
+
+body { margin: 0; padding: 0 ;font-family: 'Poppins', sans-serif; font-size: 90%;}
+
+nav {width: 100%;height: 40px;display: flex;justify-content: flex-end;align-items: center;}
+nav a {margin: 2px; text-decoration: none; color: black;}
+
+nav a:hover{ text-decoration: underline;}
+
+nav img {width: 2%; max-width: 100%; height: auto; margin-right: auto;}
+
+.activo{text-decoration: underline;}
+
+header{ background-image: url(../Imagenes/banner.JPG);
+        background-repeat: no-repeat;
+        background-size: cover; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%; 
+        height: 500px; 
+}
+
+.division  { width: 100%; padding: 1rem; display: flex; margin-bottom: 2px;}
+.division div { width: 50%;}
+.division div img {
+        width: 80%;
+        margin:auto;
+        display: block; 
+        border-radius: 10px /20px ;
+        box-shadow: 1px 3px 10px black;
+}
+
+.division img:hover{ opacity: 0.5;}
+
+.nosotros p {font-size: 1.2em;color: white;}
+.nosotros h2{font-family: miFuente; font-size: 2em; color: #e8bf65;}
+.nosotros {background-color: #b45008;}
+.nosotros .grilla{
+        display: grid; grid-gap: 10px; grid-template-columns: 60% 40%;grid-template-rows: 200px 200px;
+}
+
+.grilla div {width: auto; background-size: cover; background-repeat: no-repeat;}
+.grilla div:first-child{
+        background-position: -140px 0px ; grid-row-start: 1; grid-row-end: 3; background-image: url(../Imagenes/gym-01.JPG);
+}
+.grilla div:nth-child(2){ background-image: url(../Imagenes/gym-02.JPG);}
+.grilla div:nth-child(3){ background-image: url(../Imagenes/gym-03.JPG);}
+
+header div { width: 50%; background-color: rgba(255, 255, 255, 0.5);}
+header h1 {font-family: 'Poppins',sans-serif; font-weight: 300; font-size: 2em;}
+header h1 span {display: block; color: #b45008; font-family: miFuente; font-size: 3em;}
+
+h2{font-family: miFuente; font-size: 2em;color: #e8bf65;}
+h4{font-size: 1.4em; 
+        color: #e8bf65; 
+        border-bottom: 1px dotted #b45008;
+        text-shadow: 2px 3px 2px rgba(200, 200, 14, 0.5);
+}
+
+p{font-size: 1.2em;}
+
+h3{font-family: miFuente;
+        font-size: 3em;
+        color: #b45008;
+}
+
+main{width: 100%;}
+article{
+        width: 50%;
+        padding: 1em;
+        float: left;
+}
+
+footer{width: 100%; height: 200px; background-color: #b45008;}
+footer ul {margin: 0; padding: 0;}
+footer {color: white;display: flex;justify-content: space-evenly;align-items: center;}
+footer ul:first-of-type, footer p:first-child {font-weight: bold;}
+*{box-sizing: border-box;}
